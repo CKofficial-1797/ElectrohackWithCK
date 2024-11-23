@@ -150,7 +150,7 @@ export default function Header() {
                   </NavLink>
                 </div>
                 <div></div>
-                <div>
+                {/* <div>
                   <NavLink
                     to="http://127.0.0.1:8000/chatbot/"
                     className={({ isActive }) =>
@@ -161,7 +161,7 @@ export default function Header() {
                   >
                     MedicalChatbot
                   </NavLink>
-                </div>
+                </div>  */}
                 <div>
                   <NavLink
                     to="/search-doctor"

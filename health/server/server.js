@@ -17,6 +17,7 @@ const corsOptions = {
       "http://localhost:4173",
       "https://thapatechnical.site",
       "https://www.thapatechnical.site",
+      "https://electrohack-with-ck-zx1m.vercel.app"
     ];
     const isAllowed = allowedOrigins.includes(origin);
     callback(null, isAllowed ? origin : false);

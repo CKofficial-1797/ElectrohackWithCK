@@ -14,7 +14,7 @@ const Login = () => {
   const navigate = useNavigate();
   const { storeTokenInLS, API, isLoggedIn, LogoutUser } = useAuth();
 
-  const loginURL = `http://localhost:5001/login`;
+  const loginURL = `https://electrohackwithck.onrender.com/login`;
 
   const handleInput = (e) => {
     let name = e.target.name;

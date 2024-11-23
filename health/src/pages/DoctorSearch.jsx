@@ -10,7 +10,7 @@ const DoctorSearch = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5001/api/v1/auth/search-doctors?query=${searchQuery}`
+          `https://electrohackwithck.onrender.com/api/v1/auth/search-doctors?query=${searchQuery}`
         );
         setSearchResults(response.data);
       } catch (error) {
@@ -29,7 +29,7 @@ const DoctorSearch = () => {
   const handleSearch = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5001/api/v1/auth/search-students?query=${searchQuery}`
+        `https://electrohackwithck.onrender.com/api/v1/auth/search-students?query=${searchQuery}`
       );
       setSearchResults(response.data);
     } catch (error) {

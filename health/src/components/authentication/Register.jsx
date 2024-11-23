@@ -42,7 +42,7 @@ const Register = () => {
 
     try {
       // Assuming your backend API endpoint is /api/register
-      const response = await fetch("http://localhost:5001/registering", {
+      const response = await fetch("https://electrohackwithck.onrender.com/registering", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -12,7 +12,7 @@ const Register1 = () => {
   async function registerDoc(e) {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5001/api/v1/auth/registerdoctor", {
+      await axios.post("https://electrohackwithck.onrender.com/api/v1/auth/registerdoctor", {
         qualification,
         name,
         address,
