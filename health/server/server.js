@@ -8,22 +8,8 @@ const Patient = require("./models/patientModel");
 const connectDb = require("./utils/db");
 // const authControllers = require("./controllers/auth-controller");
 const corsOptions = {
-  // origin: "http://localhost:5173",
-  origin: (origin, callback) => {
-    // Check if the origin is allowed
-    const allowedOrigins = [
-      "http://localhost:5174",
-      "http://localhost:5173",
-      "http://localhost:4173",
-      "https://thapatechnical.site",
-      "https://www.thapatechnical.site",
-      "https://electrohack-with-ck-zx1m.vercel.app"
-    ];
-    const isAllowed = allowedOrigins.includes(origin);
-    callback(null, isAllowed ? origin : false);
-  },
+  origin: "*", // Allows all origins
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-  credentials: true,
 };
 
 app.use(cors(corsOptions));
